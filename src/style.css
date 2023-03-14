@@ -1,0 +1,30 @@
+#svg-container {
+  width: 500px;
+  height: 500px;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  animation: img 3s ease forwards;
+}
+
+@keyframes img {
+  to {
+    opacity: 1;
+  }
+}
+
+.myPath {
+  stroke: black;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: drawPath 3s ease forwards;
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
